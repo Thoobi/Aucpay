@@ -90,3 +90,4 @@
 (define-read-only (get-royalty-info)
   (ok {percentage: royalty-percentage, recipient: contract-owner})
 )
+)

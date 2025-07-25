@@ -10,15 +10,17 @@ path = 'contracts/Auction-contract.clar'
 clarity_version = 2
 epoch = 2.5
 
+
 [contracts.auction-completion]
 path = 'contracts/auction-completion.clar'
 clarity_version = 3
 epoch = 3.0
 
-[contracts.nft-contract]
-path = 'contracts/nft-contract.clar'
-clarity_version = 2
-epoch = 2.5
+[contracts.Nft-onwership]
+path = 'contracts/Nft-onwership.clar'
+clarity_version = 3
+epoch = 3.0
+
 
 [contracts.payment-contract]
 path = 'contracts/payment-contract.clar'
