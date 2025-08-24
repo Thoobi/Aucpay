@@ -74,7 +74,7 @@
 
 (define-read-only (is-auction-ended (auction-id uint))
   (match (get-auction auction-id)
-    auction-data (>= block-height (get end-block auction-data))
+    auction-data (>= stacks-block-height (get end-block auction-data))
     false
   )
 )
@@ -175,7 +175,7 @@
     ;; Record bid history
     (map-set bid-history
       { auction-id: auction-id, bidder: bidder }
-      { bid-amount: bid-amount, block-height: block-height }
+      { bid-amount: bid-amount, block-height: stacks-block-height }
     )
     ;; Update loyalty points
     (update-loyalty-points bidder bid-amount)
@@ -277,7 +277,7 @@
         item-id: item-id,
         highest-bidder: none,
         highest-bid: u0,
-        end-block: (+ block-height duration),
+        end-block: (+ stacks-block-height duration),
         finalized: false,
         item-transferred: false
       }

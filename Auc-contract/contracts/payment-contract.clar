@@ -1,33 +1,3 @@
-
-;; title: payment-contract
-;; version:
-;; summary:
-;; description:
-
-;; traits
-;;
-
-;; token definitions
-;;
-
-;; constants
-;;
-
-;; data vars
-;;
-
-;; data maps
-;;
-
-;; public functions
-;;
-
-;; read only functions
-;;
-
-;; private functions
-;;
-
 ;; Payment and Escrow Contract
 ;; Handles auctions, payments, fees, royalties, and rewards
 
